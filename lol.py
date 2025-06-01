@@ -10,8 +10,8 @@ ADMIN_FILE = "admins.json"
 GROUPS_FILE = "groups.json"
 BOT_STATUS_FILE = "bot_status.json"
 
-PROXY_FILE = "live.txt"
-VIP_PROXY = "live.txt"
+PROXY_FILE = "vip.txt"
+VIP_PROXY = "vip.txt"
 
 BLACKLIST = [
     "thcsnguyentrai.pgdductrong.edu.vn", "intenseapi.com", "edu.vn",
