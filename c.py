@@ -5,7 +5,7 @@ import time, threading, subprocess, json, os
 from urllib.parse import quote_plus
 
 # --- CAU HINH ---
-BOT_TOKEN = ""
+BOT_TOKEN = "8106312816:AAGSJ2YHOzRtlAeLi9HkXyGrLPSk_908Mms"
 ADMIN_FILE = "admins.json"
 GROUPS_FILE = "groups.json"
 BOT_STATUS_FILE = "bot_status.json"
