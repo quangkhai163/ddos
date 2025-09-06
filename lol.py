@@ -297,7 +297,7 @@ def listgr(update: Update, context: CallbackContext):
 # --- CHAY BOT ---
 def main():
     import queue
-    updater = Updater(BOT_TOKEN, update_queue=queue.Queue())
+    updater = Updater(BOT_TOKEN, use_context=True)
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler("start", start))
